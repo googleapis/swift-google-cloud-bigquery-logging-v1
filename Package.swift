@@ -25,16 +25,16 @@ let package = Package(
   ],
   dependencies: [
     .package(path: "../../packages/wkt"),
-    .package(path: "../../generated/google-iam-v1"),
-    .package(path: "../../generated/google-rpc"),
+    .package(path: "../../generated/swift-google-iam-v1"),
+    .package(path: "../../generated/swift-google-rpc"),
   ],
   targets: [
     .target(
       name: "GoogleBigQueryLoggingV1",
       dependencies: [
         .product(name: "GoogleCloudWKT", package: "wkt"),
-        .product(name: "GoogleIAMV1", package: "google-iam-v1"),
-        .product(name: "GoogleRpc", package: "google-rpc"),
+        .product(name: "GoogleIAMV1", package: "swift-google-iam-v1"),
+        .product(name: "GoogleRpc", package: "swift-google-rpc"),
       ],
     )
   ]
